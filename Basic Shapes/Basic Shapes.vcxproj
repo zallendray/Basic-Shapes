@@ -129,15 +129,15 @@
   <ItemGroup>
     <ClCompile Include="Basic Shapes.cpp" />
     <ClCompile Include="BasicShape.cpp" />
-    <ClCompile Include="Circle Class.cpp" />
-    <ClCompile Include="Rectangle Class.cpp" />
-    <ClCompile Include="Square Class.cpp" />
+    <ClCompile Include="CircleClass.cpp" />
+    <ClCompile Include="RectangleClass.cpp" />
+    <ClCompile Include="SquareClass.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BasicShape.h" />
-    <ClInclude Include="Circle Class.h" />
-    <ClInclude Include="Rectangle Class.h" />
-    <ClInclude Include="Square Class.h" />
+    <ClInclude Include="CircleClass.h" />
+    <ClInclude Include="RectangleClass.h" />
+    <ClInclude Include="SquareClass.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

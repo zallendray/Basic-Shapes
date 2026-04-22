@@ -21,13 +21,13 @@
     <ClCompile Include="BasicShape.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Circle Class.cpp">
+    <ClCompile Include="CircleClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Rectangle Class.cpp">
+    <ClCompile Include="RectangleClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Square Class.cpp">
+    <ClCompile Include="SquareClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,13 +35,13 @@
     <ClInclude Include="BasicShape.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Circle Class.h">
+    <ClInclude Include="CircleClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Rectangle Class.h">
+    <ClInclude Include="RectangleClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Square Class.h">
+    <ClInclude Include="SquareClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

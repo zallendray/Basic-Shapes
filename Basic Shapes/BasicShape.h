@@ -9,9 +9,9 @@ private:
 	double area;
 	std::string name;
 public:
-	void setArea();
+	void setArea(double a);
 	double getArea();
-	void setName();
+	void setName(std::string n);
 	std::string getName();
 
 	virtual void calcArea() = 0;
