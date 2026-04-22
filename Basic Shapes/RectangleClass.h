@@ -2,18 +2,19 @@
 #define RECTANGECLASS.H
 
 #include "BasicShape.h"
+#include <string>
 
-class RectangleClass
+class RectangleClass : public BasicShape
 {
 private:
 	double length;
 	double width;
 public:
-	RectangleClass();
-	void calcArea();
-	void setLength();
+	RectangleClass(double l, double w, std::string n = "Rectangle");
+	void calcArea(double length, double width);
+	void setLength(double l);
 	double getLength();
-	void setWidth();
+	void setWidth(double w);
 	double getWidth();
 };
 
