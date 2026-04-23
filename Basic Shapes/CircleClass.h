@@ -1,5 +1,5 @@
-#ifndef CIRCLECLASS.H
-#define CIRCLECLASS.H
+#ifndef CIRCLECLASS_H
+#define CIRCLECLASS_H
 
 #include "BasicShape.h"
 #include <string>
@@ -11,8 +11,8 @@ private:
 	double yCenter;
 	double radius;
 public:
-	CircleClass(double x, double y, double r, std::string n = "Circle");
-	void calcArea(double radius);
+	CircleClass(double x, double y, double r, std::string n);
+	void calcArea();
 
 	void setxCenter(double xc);
 	double getxCenter();

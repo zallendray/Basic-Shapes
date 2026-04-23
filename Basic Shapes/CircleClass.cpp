@@ -3,15 +3,15 @@
 CircleClass::CircleClass(double x, double y, double r, std::string n = "Circle")
 {
 	BasicShape::setName(n);
-	calcArea(r);
 	CircleClass::xCenter = x;
 	CircleClass::yCenter = y;
+	calcArea();
 }
 
-void CircleClass::calcArea(double radius)
+void CircleClass::calcArea()
 {
-	if (radius > 0) {
-		BasicShape::setArea(3.14 * radius * 3.14 * radius);
+	if (CircleClass::radius > 0) {
+		BasicShape::setArea(3.14 * radius * 3.14 * CircleClass::radius);
 	}
 	else {
 		BasicShape::setArea(0);
@@ -46,7 +46,7 @@ void CircleClass::setRadius(double radius)
 	else {
 		CircleClass::radius = 0;
 	}
-	calcArea(radius);
+	calcArea();
 }
 
 double CircleClass::getRadius()

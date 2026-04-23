@@ -5,12 +5,12 @@ RectangleClass::RectangleClass(double l, double w, std::string n = "Rectangle")
 	BasicShape::setName(n);
 	setLength(l);
 	setWidth(w);
-	calcArea(RectangleClass::length, RectangleClass::width);
+	calcArea();
 }
 
-void RectangleClass::calcArea(double length, double width)
+void RectangleClass::calcArea()
 {
-	BasicShape::setArea(length * width);
+	BasicShape::setArea(RectangleClass::length * RectangleClass::width);
 }
 
 void RectangleClass::setLength(double l)
@@ -21,6 +21,7 @@ void RectangleClass::setLength(double l)
 	else {
 		RectangleClass::length = 0;
 	}
+	calcArea();
 }
 
 double RectangleClass::getLength()

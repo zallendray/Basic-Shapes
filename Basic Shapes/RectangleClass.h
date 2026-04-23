@@ -1,5 +1,5 @@
-#ifndef RECTANGLECLASS.H
-#define RECTANGECLASS.H
+#ifndef RECTANGLECLASS_H
+#define RECTANGECLASS_H
 
 #include "BasicShape.h"
 #include <string>
@@ -10,8 +10,8 @@ private:
 	double length;
 	double width;
 public:
-	RectangleClass(double l, double w, std::string n = "Rectangle");
-	void calcArea(double length, double width);
+	RectangleClass(double l, double w, std::string n);
+	void calcArea();
 	void setLength(double l);
 	double getLength();
 	void setWidth(double w);

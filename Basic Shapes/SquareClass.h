@@ -1,15 +1,15 @@
-#ifndef SQUARECLASS
-#define SQUARECLASS
+#ifndef SQUARECLASS_H
+#define SQUARECLASS_H
 
 #include "RectangleClass.h"
 
-class SquareClass
+class SquareClass : public RectangleClass
 {
 private:
 	double side;
 public:
-	SquareClass();
-	void setSide();
+	SquareClass(double s, std::string n);
+	void setSide(double side);
 	double getSide();
 };
 

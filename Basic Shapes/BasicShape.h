@@ -1,5 +1,5 @@
-#ifndef BASICSHAPE.H
-#define BASICSHAPE.H
+#ifndef BASICSHAPE_H
+#define BASICSHAPE_H
 
 #include <string>
 
