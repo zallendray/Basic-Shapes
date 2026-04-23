@@ -5,6 +5,7 @@ CircleClass::CircleClass(double x, double y, double r, std::string n = "Circle")
 	BasicShape::setName(n);
 	CircleClass::xCenter = x;
 	CircleClass::yCenter = y;
+	CircleClass::radius = r;
 	calcArea();
 }
 

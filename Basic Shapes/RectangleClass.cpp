@@ -37,6 +37,7 @@ void RectangleClass::setWidth(double w)
 	else {
 		RectangleClass::width = 0;
 	}
+	calcArea();
 }
 
 double RectangleClass::getWidth()

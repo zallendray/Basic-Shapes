@@ -1,5 +1,5 @@
 #ifndef RECTANGLECLASS_H
-#define RECTANGECLASS_H
+#define RECTANGLECLASS_H
 
 #include "BasicShape.h"
 #include <string>
