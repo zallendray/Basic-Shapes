@@ -1,4 +1,5 @@
 #include <iostream>
+#include "BasicShape.h"
 #include "CircleClass.h"
 #include "RectangleClass.h"
 #include "SquareClass.h"
@@ -6,16 +7,20 @@
 
 int main()
 {
+    const int num_shapes = 5;
+
     CircleClass circle(15, -5, 42, "The SuperCircle"), circle2(11.2, 7.5, 2.7, "The SubCircle");
-    RectangleClass rec(17, 2, "Small Rectangle"), rec2(10,5,"Big Rectangle");
-    SquareClass square(12,"Equilateral Square");
+    RectangleClass rec(17, 2, "Small Rectangle"), rec2(10, 5, "Big Rectangle");
+    SquareClass square(12, "Equilateral Square");
 
-    std::cout << "Name: " << circle.getName() << "  Area: " << circle.getArea() << std::endl
-        << "Name: " << circle2.getName() << "   Area: " << circle2.getArea() << std::endl
-        << "Name: " << rec.getName() << "   Area: " << rec.getArea() << std::endl
-        << "Name: " << rec2.getName() << "   Area: " << rec2.getArea() << std::endl
-        << "Name: " << square.getName() << "   Area: " << square.getArea() << std::endl << std::endl;
+    BasicShape* shapes[num_shapes] = {&circle,&circle2,&rec,&rec2,&square};
 
+    for (int i = 0; i < num_shapes; i++)
+    {
+        std::cout << "Name: " << shapes[i]->getName() << "   Area: " << shapes[i]->getArea() << std::endl;
+
+    }
+    std::cout << std::endl;
 
     circle.setRadius(10);
     std::cout << "Circle after changing radius to 10: " << circle.getArea() << std::endl;
